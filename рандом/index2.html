@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Рандомайзер Да/Нет - Генератор случайных ответов онлайн2.0</title>
+    <meta name="description" content="Бесплатный онлайн рандомайзер Да или Нет. Получите случайный ответ на любой вопрос мгновенно. Простой и удобный генератор решений.">
+    <meta name="keywords" content="рандомайзер да нет, случайный ответ, генератор решений, да или нет, выбор, вопрос ответ, онлайн рандомайзер">
+    <meta name="author" content="Лизун">
+
+    <!-- Open Graph для соцсетей -->
+    <meta property="og:title" content="Рандомайзер Да/Нет - Генератор случайных ответов">
+    <meta property="og:description" content="Получите случайный ответ Да или Нет на любой вопрос">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://subtle-sprite-7478da.netlify.app">
+    
+    <!-- Для мобильных устройств -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🎲 Рандомайзер Да/Нет</h1>
+        
+        <input type="text" class="question-input" placeholder="Введите ваш вопрос..." id="questionInput">
+        
+        <button class="generate-btn" id="generateBtn">Получить ответ</button>
+        
+        <div class="result" id="result">?</div>
+        
+        <div class="counter">
+            <div class="counter-item yes-count">
+                <div class="counter-number" id="yesCount">0</div>
+                <div>Да</div>
+            </div>
+            <div class="counter-item no-count">
+                <div class="counter-number" id="noCount">0</div>
+                <div>Нет</div>
+            </div>
+        </div>
+        
+        <div class="history">
+            <h3>История ответов:</h3>
+            <div class="history-list" id="historyList">
+                <!-- История будет добавляться здесь -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script2.js"></script>
+</body>
+</html>

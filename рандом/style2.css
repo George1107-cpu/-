@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #000000 0%, #764ba2 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    max-width: 500px;
+    width: 100%;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 30px;
+    font-size: 1.5rem;
+}
+
+.question-input {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #764ba2;
+    border-radius: 20px;
+    font-size: 1.1rem;
+    margin-bottom: 40px;
+    transition: border-color 0.3s;
+}
+
+.question-input:focus {
+    outline: none;
+    border-color: #d1ff02;
+}
+
+.generate-btn {
+    background: linear-gradient(135deg, #000000, #764ba2);
+    color: rgb(255, 255, 255);
+    border: none;
+    padding: 15px 40px;
+    font-size: 1.2rem;
+    border-radius: 40px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-bottom: 30px;
+    box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+}
+
+.generate-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(102, 126, 234, 0.6);
+}
+
+.generate-btn:active {
+    transform: translateY(0);
+}
+
+.result {
+    font-size: 4rem;
+    font-weight: bold;
+    margin: 20px 0;
+    min-height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s ease;
+}
+
+.yes {
+    color: #13d133;
+}
+
+.no {
+    color: #961304;
+}
+
+.animation {
+    animation: pulse 0.5s ease-in-out;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+}
+
+.history {
+    margin-top: 30px;
+    text-align: left;
+}
+
+.history h3 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.history-list {
+    max-height: 150px;
+    overflow-y: auto;
+    background: #f8f9fa;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.history-item {
+    padding: 5px 0;
+    border-bottom: 1px solid #eee;
+    font-size: 0.9rem;
+}
+
+.history-item:last-child {
+    border-bottom: none;
+}
+
+.counter {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    padding: 15px;
+    background: #f8f9fa;
+    border-radius: 10px;
+}
+
+.counter-item {
+    text-align: center;
+}
+
+.counter-number {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.yes-count .counter-number {
+    color: #13d133;
+}
+
+.no-count .counter-number {
+    color: #961304;
+}
